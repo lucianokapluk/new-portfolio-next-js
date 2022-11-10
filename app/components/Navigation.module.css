@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 97vh;
+
+    padding: 0 50px;
+
+}
+
+.profile_card {
+
+    height: 550px;
+    width: 480px;
+
+
+}
+
+.blur {
+    background-color: rgba(0, 255, 234, 0.02);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+}
+
+
+
+.slide {
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 52%;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url("https://lh3.googleusercontent.com/ogw/AOh-ky25KCM_IjSyaKFJSTVnQvRiTQwMNnZ3XoZjuYiA=s400-c-mo");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+
+.body_card_profile {
+
+    padding: 16px;
+    display: block;
+
+
+
+
+}
