@@ -1,18 +1,14 @@
-'use client'
-import Script from "next/script"
-import "../styles/style.css"
+import PageComponent from "./components/page_component/PageComponent"
 
-import { CVBody } from "./components/Navigation"
 export default function HomePage() {
 
     return (
         <>
-            <Script src="./js/jquery.js" async />
-            <Script src="./js/plugins.js" async />
+            <PageComponent>
 
-            <div className="waves"></div>
+                <h1>HOMNE</h1>
+            </PageComponent>
 
-            <CVBody />
         </>
 
 

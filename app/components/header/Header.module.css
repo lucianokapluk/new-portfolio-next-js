@@ -1,9 +1,6 @@
 .header {
     margin: 15px;
-
-    width: 72px;
-
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 0px;
     list-style: none;
     background-color: rgba(0, 255, 234, 0.02);
@@ -12,4 +9,8 @@
     -moz-backdrop-filter: blur(5px);
     -o-backdrop-filter: blur(5px);
     -ms-backdrop-filter: blur(5px);
+
+
+
+
 }

@@ -403,7 +403,7 @@ class ShaderProgram {
     const buffers = this.buffers
 
     Object.keys(buffers).forEach(name =>
-      buffers[name] = buffer.data
+      buffers[name] = buffers.data
     )
 
     this.setBuffer(null)
@@ -466,7 +466,7 @@ class ShaderProgram {
     this.uniforms.time = elapsed
 
     if (this.count > 0) {
-      gl.clear(gl.COLORBUFFERBIT)
+      /*    gl.clear(gl.COLORBUFFERBIT) */
       gl.drawArrays(gl.POINTS, 0, this.count)
     }
 
