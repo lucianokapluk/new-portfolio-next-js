@@ -1,13 +1,14 @@
 
-import PageComponent from "../components/page_component/PageComponent"
+import Transition from "../components/page_component/Transition"
+
 export default function AboutPage() {
 
     return (
 
 
-        <PageComponent >
+        <Transition >
             <h1>ABOUT</h1>
-        </PageComponent>
+        </Transition>
 
 
     )

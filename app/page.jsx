@@ -1,13 +1,13 @@
-import PageComponent from "./components/page_component/PageComponent"
+import Transition from "./components/page_component/Transition"
 
 export default function HomePage() {
 
     return (
         <>
-            <PageComponent>
+            <Transition>
 
                 <h1>HOMNE</h1>
-            </PageComponent>
+            </Transition>
 
         </>
 
