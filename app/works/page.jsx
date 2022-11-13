@@ -1,7 +1,7 @@
 
 'use client'
 import { motion } from 'framer-motion';
-export default function HomePage() {
+export default function WorksPage() {
 
     return (
 
@@ -11,7 +11,7 @@ export default function HomePage() {
 
 
         >
-            <h1>about</h1>
+            <h1>Works</h1>
 
         </motion.div>
 

@@ -1,14 +1,11 @@
-'use client'
-import { useSelectedLayoutSegment } from 'next/navigation';
+
 import '../styles/globals.css';
 import Header from './components/header/Header';
-import Transition from './components/page_component/Transition';
 import WavesBackground from './components/waves-background/WavesBackground';
 import styles from './layout.module.css';
 
 export default function RootLayout({ children }) {
-  const segment = useSelectedLayoutSegment();
-  console.log(segment)
+
   return (
 
     <html>
@@ -30,9 +27,11 @@ export default function RootLayout({ children }) {
               <span> asdas bdajhsb asds aasd dasd sad sa  djashb ldashb djsahb dljashb dalsjh basjhb d</span>
             </div>
           </div>
-          <Transition keys={segment}>
+
+          <div className={styles.container_blur}>
             {children}
-          </Transition>
+          </div>
+
 
 
 
