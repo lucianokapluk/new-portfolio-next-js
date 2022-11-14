@@ -1,5 +1,5 @@
 
-import Container from "../components/containers/container"
+import Container from "../components/containers/Container"
 import './experience.css'
 export default function ExperiencePage() {
 
