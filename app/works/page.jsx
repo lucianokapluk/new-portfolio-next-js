@@ -6,7 +6,10 @@ export default function WorksPage() {
     return (
 
 
-        <Container title={"Works"} />
+        <Container title={"Works"} >
+
+            <p>works</p>
+        </Container>
 
 
 
