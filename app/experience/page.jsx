@@ -15,14 +15,14 @@ export default function ExperiencePage() {
                 <ul className="rb">
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            3rd May 2020<br /> 7:00 PM
+                            3rd May 2020
                         </div>
                         <div className="item-title">Chris Serrano posted a photo on your wall.</div>
 
                     </li>
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            19th May 2020<br /> 3:00 PM
+                            19th May 2020
                         </div>
                         <div className="item-title">Mia Redwood commented on your last post.</div>
 
@@ -30,7 +30,21 @@ export default function ExperiencePage() {
 
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            17st June 2020<br /> 7:00 PM
+                            17st June 2020
+                        </div>
+                        <div className="item-title">Lucas McAlister just send you a message.</div>
+
+                    </li>
+                    <li className="rb-item" ng-repeat="itembx">
+                        <div className="timestamp">
+                            17st June 2020
+                        </div>
+                        <div className="item-title">Lucas McAlister just send you a message.</div>
+
+                    </li>
+                    <li className="rb-item" ng-repeat="itembx">
+                        <div className="timestamp">
+                            17st June 2020
                         </div>
                         <div className="item-title">Lucas McAlister just send you a message.</div>
 

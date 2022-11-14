@@ -5,17 +5,19 @@
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: auto;
 }
 
 .body_container {
     padding: 30px 30px;
+
 }
 
-.body_container::-webkit-scrollbar {
+.container::-webkit-scrollbar {
     width: 10px;
 }
 
-.body_container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
     border-radius: 25%;
     background-color: rgba(25, 245, 227, 0.02);
     backdrop-filter: blur(5px);
@@ -25,7 +27,7 @@
     -ms-backdrop-filter: blur(5px);
 }
 
-.body_container::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
 
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: rgba(0, 255, 234, 0.02);
