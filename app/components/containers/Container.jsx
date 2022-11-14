@@ -1,6 +1,6 @@
 
 
-import Title from '../title/title';
+import Title from '../title/Title';
 import styles from './Container.module.css';
 export default function Container({ children, title }) {
     return (
