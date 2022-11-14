@@ -1,19 +1,15 @@
+import Container from "../components/containers/container";
 
-'use client'
-import { motion } from 'framer-motion';
+
 export default function WorksPage() {
 
     return (
 
-        <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: -100 }}
+
+        <Container title={"Works"} />
 
 
-        >
-            <h1>Works</h1>
 
-        </motion.div>
 
 
 

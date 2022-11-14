@@ -1,19 +1,17 @@
+import Container from "../components/containers/container";
 
-'use client'
-import { motion } from 'framer-motion';
+
 export default function ContactPage() {
 
     return (
 
-        <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: -100 }}
+        <Container title={"Contact"}>
+
+        </Container>
 
 
-        >
-            <h1>ContactPage</h1>
 
-        </motion.div>
+
 
 
 

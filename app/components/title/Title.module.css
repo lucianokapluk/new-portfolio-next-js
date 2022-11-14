@@ -1,0 +1,14 @@
+.title {
+
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(46, 143, 227, 0), rgba(0, 157, 255, 0.336), rgba(151, 4, 164, 0));
+    border-image-slice: 1;
+
+
+}
+
+.margin_zero {
+    margin: 15px;
+}
