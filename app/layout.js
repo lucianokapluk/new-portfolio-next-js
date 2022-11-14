@@ -1,5 +1,6 @@
 
 import { Poppins } from '@next/font/google';
+import Image from 'next/image';
 import '../styles/globals.css';
 import Header from './components/header/Header';
 import WavesBackground from './components/waves-background/WavesBackground';
@@ -21,11 +22,29 @@ export default function RootLayout({ children }) {
         <div className={styles.container}>
           <Header />
           <div className={styles.profile_card + ' ' + styles.blur}>
-            <div className={styles.slide}>
-
+            <div >
+              <div className={styles.image_profile}>
+                <Image src="/LucianoKapluk.jpg" layout='fill'
+                  objectFit='cover' alt="profile" />
+              </div>
+              {/*           <Image src="/LucianoKapluk.jpg" layout='fill'
+                objectFit='contain' alt="profile" position="relative" /> */}
             </div>
             <div className={styles.body_card_profile}>
-              <span> asdas bdajhsb asds aasd dasd sad sa  djashb ldashb djsahb dljashb dalsjh basjhb d</span>
+              <div className={styles.my_name}>Luciano Kapluk</div>
+              <div className={styles.profession}> Flutter Developer</div>
+              <div className={styles.brands_icons}>
+
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div className={styles.download_cv_container}>
+              <div className={styles.download_cv_button}><div>DOWNLOAD CV</div></div>
+              <div className={styles.contact_button}><div>CONTACT ME</div></div>
             </div>
           </div>
 

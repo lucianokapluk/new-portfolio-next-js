@@ -6,48 +6,43 @@ export default function ExperiencePage() {
     return (
 
         <Container title={"Experience"}>
-
-
-
-
-
             <div className="rb-container">
                 <ul className="rb">
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            3rd May 2020
+                            Ahora<br />VectorMGT
                         </div>
-                        <div className="item-title">Chris Serrano posted a photo on your wall.</div>
+                        <div className="item-title">Desarrollador Flutter</div>
 
                     </li>
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            19th May 2020
+                            2020<br />Scalecoding
                         </div>
-                        <div className="item-title">Mia Redwood commented on your last post.</div>
+                        <div className="item-title">Test Automatizado con Cypress</div>
 
                     </li>
 
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            17st June 2020
+                            2020<br />Teloregalo.com.ar
                         </div>
-                        <div className="item-title">Lucas McAlister just send you a message.</div>
+                        <div className="item-title">Desarrollador Back-End con Laravel</div>
 
                     </li>
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            17st June 2020
+                            2019<br />PL Software
                         </div>
-                        <div className="item-title">Lucas McAlister just send you a message.</div>
+                        <div className="item-title">Desarrollo de software con C# (Windows Forms)</div>
+
 
                     </li>
                     <li className="rb-item" ng-repeat="itembx">
                         <div className="timestamp">
-                            17st June 2020
+                            2019 <br />ElectroCom
                         </div>
-                        <div className="item-title">Lucas McAlister just send you a message.</div>
-
+                        <div className="item-title">Desarrollador de software (Python)</div>
                     </li>
 
                 </ul>
