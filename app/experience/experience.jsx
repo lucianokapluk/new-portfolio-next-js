@@ -1,11 +1,12 @@
 
+
 import Container from "../components/containers/Container"
 import './experience.css'
 export default function ExperiencePage() {
 
     return (
 
-        <Container title={"Experience"}>
+        <Container title={"Experience"} id="/experience">
             <div className="rb-container">
                 <ul className="rb">
                     <li className="rb-item" ng-repeat="itembx">

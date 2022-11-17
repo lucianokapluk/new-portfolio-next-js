@@ -1,12 +1,17 @@
-
+'use client'
 import { Poppins } from '@next/font/google';
 import Image from 'next/image';
 import '../styles/globals.css';
+import { TabIndexProvider } from './components/context';
 import Header from './components/header/Header';
+import Transitions from './components/page_component/Transition';
 import WavesBackground from './components/waves-background/WavesBackground';
 import styles from './layout.module.css';
 const poppins = Poppins({ weight: "400", subsets: ['latin'] })
-export default function RootLayout({ children }) {
+export default function RootLayout() {
+
+
+
 
   return (
 
@@ -18,46 +23,41 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className={poppins.className}>
-        <WavesBackground />
-        <div className={styles.container}>
-          <Header />
-          <div className={styles.profile_card + ' ' + styles.blur}>
-            <div >
-              <div className={styles.image_profile}>
-                <Image src="/LucianoKapluk.jpg" layout='fill'
-                  objectFit='cover' alt="profile" />
-              </div>
-              {/*           <Image src="/LucianoKapluk.jpg" layout='fill'
+        <TabIndexProvider>
+          <WavesBackground />
+          <div className={styles.container}>
+            <Header />
+            <div className={styles.profile_card + ' ' + styles.blur}>
+              <div >
+                <div className={styles.image_profile}>
+                  <Image src="/LucianoKapluk.jpg" layout='fill'
+                    objectFit='cover' alt="profile" />
+                </div>
+                {/*           <Image src="/LucianoKapluk.jpg" layout='fill'
                 objectFit='contain' alt="profile" position="relative" /> */}
-            </div>
-            <div className={styles.body_card_profile}>
-              <div className={styles.my_name}>Luciano Kapluk</div>
-              <div className={styles.profession}> Flutter Developer</div>
-              <div className={styles.brands_icons}>
+              </div>
+              <div className={styles.body_card_profile}>
+                <div className={styles.my_name}>Luciano Kapluk</div>
+                <div className={styles.profession}> Flutter Developer</div>
+                <div className={styles.brands_icons}>
 
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+              <div className={styles.download_cv_container}>
+                <div className={styles.download_cv_button}><div>DOWNLOAD CV</div></div>
+                <div className={styles.contact_button}><div>CONTACT ME</div></div>
               </div>
             </div>
-            <div className={styles.download_cv_container}>
-              <div className={styles.download_cv_button}><div>DOWNLOAD CV</div></div>
-              <div className={styles.contact_button}><div>CONTACT ME</div></div>
-            </div>
+            <Transitions />
           </div>
-
-          <div className={styles.container_blur}>
-            {children}
-          </div>
-
-
-
-
-        </div>
-
+        </TabIndexProvider>
       </body>
     </html >
+
   )
 }

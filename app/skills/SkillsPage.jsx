@@ -5,7 +5,7 @@ export default function SkillsPage() {
 
     return (
 
-        <Container title={"Skills"} >
+        <Container title={"Skills"} id="/skills">
             <p>skills</p>
         </Container>
 
